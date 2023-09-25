@@ -8,6 +8,7 @@ new Flickity( '.carousel-mobile', {
   draggable: false,
   pageDots: false,
   fade: true
+
 });
 
 new Flickity('.how-works-carousel', {
