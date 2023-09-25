@@ -1,0 +1,32 @@
+.policy {
+    display: flex;
+    justify-content: center;
+    margin-top: 240px;
+}
+
+.policy .container {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+}
+
+.policy__container {
+    display: flex;
+    gap: 50px;
+}
+
+.policy__column {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.policy__column ul {
+    margin: 0;
+    padding-left: 27px;
+}
+
+.policy .list {
+    letter-spacing: -0.5px;
+}

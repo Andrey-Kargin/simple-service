@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fade@2/flickity-fade.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#main" class="header__left">
+                <h1 class="header__logo">SR</h1>
+                <h2 class="header__title">SIMPLE<span>SERVICE</span></h2>
+            </a>
+            <nav class="header__nav">
+                <a href="#platform" class="header__nav-link">Платформа</a>
+                <a href="#how-works" class="header__nav-link">Как работает</a>
+                <a href="#about-us" class="header__nav-link">О компании</a>
+                <a href="#contacts" class="header__nav-link">Контакты</a>
+                <div class="header__nav-bottom mobile">
+                    <p class="desc">+7 (906) 269 37 92</p>
+                    <p class="desc">info@simpleservice.tech</p>
+                </div>
+            </nav>
+            <p class="header__phone">+7 (906) 269 37 92</p>
+            <div id="btn" class="mobile burger">
+                <span id="btn">
+                </span>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <section id="main" class="simple-service">
+            <div class="container">
+                <div class="simple-service__text">
+                    <h2 class="hero-title">SIMPLE <span class="service">SERVICE</span></h2>
+                    <h3 class="subtitle">Удобная цифровая платформа<br>для управляющей компании</h3>
+                    <button id="fill-btn" class="btn">Протестировать</button>
+                    <div class="simple-service__grid">
+                        <p class="desc">3 месяца бесплатно</p>
+                        <p class="desc">Внедрение<br>системы за 1 день</p>
+                        <p class="desc">Без хаоса<br>в заявках</p>
+                    </div>
+                </div>
+                
+                <img src="./img/ss-iphone.png" class="simple-service__img-iphone" alt="Интерфейс приложения Айфон" />
+                <img src="./img/ss-ipad.png" class="simple-service__img-ipad" alt="Интерфейс приложения Айпад" />
+                <img src="./img/ss-date.png" class="simple-service__img-date" alt="Заявка" />
+                <img src="./img/ss-status.png" class="simple-service__img-status" alt="Статус заявки" />
+            </div>
+        </section>
+        <section id="platform" class="simple-service__slider">
+            <div class="container">
+                <div class="simple-service__slider-text">
+                    <h2 class="title">Все сервисы <br class="mobile">и услуги УК <br class="pc-1200">в одном приложении</h2>
+                    <h3 class="simple-service__slider-logo">SR</h3>
+                </div>
+                <div class="ss-carousel swiper">
+                    <div class="swiper-wrapper">
+                        <div class="ss-carousel-cell swiper-slide">
+                            <img src="./img/carousel-1.png" class="pc ss-cell__img1" alt="Интерфейс веб-администратора">
+                            <img src="./img/carousel-1-1200.png" class="pc-1200 ss-cell__img1" alt="Интерфейс веб-администратора">
+                            <img src="./img/carousel-1-pt.png" class="pt ss-cell__img1" alt="Интерфейс веб-администратора">
+                            <img src="./img/carousel-1-mobile.png" class="mobile ss-cell__img1" alt="Интерфейс веб-администратора">
+                            <div class="ss-carousel-cell__text">
+                                <h2 class="undertitle">Web-версия<br>Администратора</h2>
+                                <ul class="ss-carousel-cell__list">
+                                    <li class="list">управление заявками</li>
+                                    <li class="list">гибкая статистика по заявкам</li>
+                                    <li class="list">настройка системы: управление помещениями, создание и редактирование услуг, добавление пользователей</li>
+                                    <li class="list">контроль выполнения заявок и качества оказания услуг</li>
+                                    <li class="list">аналитика и формирование отчетов</li>
+                                    <li class="list">рассылки для резидентов</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ss-carousel-cell swiper-slide">
+                            <img src="./img/carousel-2.png" class="pc ss-cell__img2" alt="Интерфейс веб-администратора">
+                            <img src="./img/carousel-2-1200.png" class="pc-1200 ss-cell__img2" alt="Интерфейс веб-администратора">
+                            <img src="./img/carousel-2-pt.png" class="pt ss-cell__img2" alt="Интерфейс веб-администратора">
+                            <img src="./img/carousel-2-mobile.png" class="mobile ss-cell__img2" alt="Интерфейс веб-администратора">
+                            <div class="ss-carousel-cell__text">
+                                <h2 class="undertitle">Приложение<br>Резидента</h2>
+                                <ul class="ss-carousel-cell__list">
+                                    <li class="list">оформление и оценка заявок</li>
+                                    <li class="list">контроль статуса заявок</li>
+                                    <li class="list">чат с исполнителями и администратором</li>
+                                    <li class="list">уведомления по заявкам</li>
+                                    <li class="list">новости от УК </li>
+                                    <li class="list">отправка и просмотр показаний счетчиков</li>
+                                    <li class="list">история заявок</li>
+                                </ul>
+                                <div class="ss-carousel__app-box">
+                                    <a href="#"><img src="./img/appleSTORE.png" class="ss-carousel__app-img" alt="ЭплСтор"></a>
+                                    <a href="#"><img src="./img/googlePLAY.png" class="ss-carousel__app-img" alt="ГуглМаркет"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ss-carousel-cell swiper-slide">
+                            <img src="./img/carousel-3.png" class="pc ss-cell__img3" alt="Интерфейс веб-администратора">
+                            <img src="./img/carousel-3-1200.png" class="pc-1200 ss-cell__img3" alt="Интерфейс веб-администратора">
+                            <img src="./img/carousel-3-pt.png" class="pt ss-cell__img3" alt="Интерфейс веб-администратора">
+                            <img src="./img/carousel-3-mobile.png" class="mobile ss-cell__img3" alt="Интерфейс веб-администратора">
+                            <div class="ss-carousel-cell__text">
+                                <h2 class="undertitle">Приложение<br>Исполнителя</h2>
+                                <ul class="ss-carousel-cell__list">
+                                    <li class="list">обработка заявок</li>
+                                    <li class="list">акты выполненных работ</li>
+                                    <li class="list">связь с заказчиками и <br class="mobile">диспетчером</li>
+                                    <li class="list">простой и понятный интерфейс</li>
+                                    <li class="list">уведомления на любое <br class="mobile">устройство</li>
+                                </ul>
+                                <div class="ss-carousel__app-box">
+                                    <a href="#"><img src="./img/appleSTORE.png" class="ss-carousel__app-img" alt="ЭплСтор"></a>
+                                    <a href="#"><img src="./img/googlePLAY.png" class="ss-carousel__app-img" alt="ГуглМаркет"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__text">
+                    <h2 class="title">В чём преимущества <br class="mobile">для коммерческой <br>и жилой <br class="pt">недвижимости </h2>    
+                </div>
+                <div class="advantages__box box-1">
+                    <img src="./img/tick.png" class="advantages__box-img" alt="Галочка">
+                    <p class="desc">Гибкая статистика<br>и наглядная аналитика</p>
+                </div>
+                <div class="advantages__box box-2">
+                    <img src="./img/tick.png" class="advantages__box-img" alt="Галочка">
+                    <p class="desc">Единое сервисное окно <br class="pt pc">для <br class="pc-1200">всех типов заявок</p>
+                </div>
+                <div class="advantages__box box-3">
+                    <img src="./img/tick.png" class="advantages__box-img" alt="Галочка">
+                    <p class="desc">Маршрутизация заявок<br class="pc-1200"> и <br class="pc pt">контроль сервисных служб</p>
+                </div>
+                <div class="advantages__box box-4">
+                    <img src="./img/tick.png" class="advantages__box-img" alt="Галочка">
+                    <p class="desc">Повышение удовлетворенности<br>сотрудников и резидентов</p>
+                </div>
+                <div class="advantages__box box-5">
+                    <img src="./img/tick.png" class="advantages__box-img" alt="Галочка">
+                    <p class="desc">Прозрачные статусы<br>выполнения заявок</p>
+                </div>
+                <div class="advantages__box box-6">
+                    <img src="./img/tick.png" class="advantages__box-img" alt="Галочка">
+                    <p class="desc">На 20% сокращение <br class="pc">потери <br class="pc-1200">трудового ресурса </p>
+                </div>
+            </div>
+        </section>
+        <section class="test">
+            <div class="container">
+                <img src="./img/test-logo.png" class="test__logo" alt="Логотип">
+                <div class="test__text">
+                    <h2 class="title">Протестируйте бесплатно</h2>
+                    <p class="subtitle">3 месяца демо-доступа</p>
+                    <button id="test-btn" class="btn">Оставить заявку</button>
+                </div>
+            </div>
+        </section>
+        <section id="how-works" class="how-works">
+            <div class="container">
+                <div class="how-works-carousel pc pc-1200 pt">
+                    <div class="how-works-carousel-cell">
+                        <div class="cell-1">
+                            <h2 class="title">Как работает система?</h2>
+                            <div class="cell-1__text">
+                                <h3 class="undertitle">01</h3>
+                                <p class="desc">Резидент оформляет заявку <br class="pc-1200">в приложении</p>
+                            </div>
+                            <img src="./img/cell-1.png" class="cell-1__img pc" alt="Интерфейс" />
+                            <img src="./img/cell-1-1200.png" class="cell-1__img pc-1200" alt="Интерфейс" />
+                            <img src="./img/cell-1-pt.png" class="cell-1__img pt" alt="Интерфейс" />
+                            <img src="./img/cell-1-bg.png" class="cell-1__bg" alt="фон" />
+                        </div>
+                        <div class="cell-2">
+                            <h2 class="undertitle">02</h2>
+                            <p class="desc">Администратор имеет возможность назначить конкретного исполнителя либо настроить автомаршрутизацию заявки</p>
+                            <img src="./img/cell-2.png" class="cell-2__img pc" alt="Интерфейс" />
+                            <img src="./img/cell-2-1200.png" class="cell-2__img pc-1200" alt="Интерфейс" />
+                            <img src="./img/cell-2-pt.png" class="cell-2__img pt" alt="Интерфейс" />
+                            <img src="./img/cell-2-bg.png" class="cell-2__bg" alt="фон" />
+                        </div>
+                    </div>
+                    <div class="how-works-carousel-cell">
+                        <div class="cell-3">
+                            <h2 class="title">Как работает система?</h2>
+                            <div class="cell-3__text">
+                                <h3 class="undertitle">03</h3>
+                                <p class="desc">Исполнитель получает уведомление на любое устройство и приступает к работе</p>
+                            </div>
+                            <img src="./img/cell-3.png" class="cell-3__img pc" alt="Интерфейс" />
+                            <img src="./img/cell-3-1200.png" class="cell-3__img pc-1200" alt="Интерфейс" />
+                            <img src="./img/cell-3-pt.png" class="cell-3__img pt" alt="Интерфейс" />
+                            <img src="./img/cell-3-bg.png" class="cell-3__bg" alt="фон" />
+                        </div>
+                        <div class="cell-4">
+                            <h2 class="undertitle">04</h2>
+                            <p class="desc">По завершении работ Исполнитель при необходимости оценивает затраченные ресурсы и формирует отчет о <br class="pc-1200">выполненной работе. <br class="pc pt">Резидент ставит оценку и оставляет <br class="mobile">отзыв. Администратор видит всю информацию о заявке</p>
+                            <img src="./img/cell-4.png" class="cell-4__img pc" alt="Интерфейс" />
+                            <img src="./img/cell-4-1200.png" class="cell-4__img pc-1200" alt="Интерфейс" />
+                            <img src="./img/cell-4-pt.png" class="cell-4__img pt" alt="Интерфейс" />
+                            <img src="./img/cell-4-bg.png" class="cell-4__bg" alt="фон" />
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-mobile mobile">
+                    <div class="cell-1">
+                        <h2 class="title">Как работает система?</h2>
+                        <div class="cell-1__text">
+                            <h3 class="undertitle">01</h3>
+                            <p class="desc">Резидент оформляет заявку в приложении</p>
+                        </div>
+                        <img src="./img/cell-1-mobile.png" class="cell-1__img mobile" alt="Интерфейс" />
+                        <img src="./img/cell-1-bg.png" class="cell-1__bg" alt="фон" />
+                    </div>
+                    <div class="cell-2">
+                        <h2 class="title">Как работает система?</h2>
+                        <div class="cell-2__text">
+                            <h3 class="undertitle">02</h3>
+                            <p class="desc">Администратор имеет возможность назначить конкретного исполнителя либо настроить автомаршрутизацию заявки</p>
+                        </div>
+                        <img src="./img/cell-2-mobile.png" class="cell-2__img mobile" alt="Интерфейс" />
+                        <img src="./img/cell-2-bg.png" class="cell-2__bg" alt="фон" />
+                    </div>
+                    <div class="cell-3">
+                        <h2 class="title">Как работает система?</h2>
+                        <div class="cell-3__text">
+                            <h3 class="undertitle">03</h3>
+                            <p class="desc">Исполнитель получает уведомление на любое устройство и приступает к работе</p>
+                        </div>
+                        <img src="./img/cell-3-mobile.png" class="cell-3__img mobile" alt="Интерфейс" />
+                        <img src="./img/cell-3-bg.png" class="cell-3__bg" alt="фон" />
+                    </div>
+                    <div class="cell-4">
+                        <h2 class="title">Как работает система?</h2>
+                        <div class="cell-4__text">
+                            <h3 class="undertitle">04</h3>
+                            <p class="desc">По завершении работ Исполнитель при необходимости оценивает затраченные ресурсы и формирует отчет о выполненной работе. Резидент ставит оценку и оставляет отзыв. Администратор видит всю информацию о заявке</p>
+                        </div>
+                        <img src="./img/cell-4-mobile.png" class="cell-4__img mobile" alt="Интерфейс" />
+                        <img src="./img/cell-4-bg.png" class="cell-4__bg" alt="фон" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="eco">
+            <div class="container">
+                <h2 class="title">Единая экосистема <br class="pc-1200 pt">для всех</h2>
+                <img src="./img/eco.png" class="eco__logo pc pc-1200 pt" alt="SR" />
+                <img src="./img/eco-mobile.png" class="eco__logo mobile" alt="SR" />
+                <div class="eco__container">
+                    <h3 class="subtitle">Резиденты,<br>гости</h3>
+                    <ul class="eco__list">
+                        <li class="list">все сервисы УК<br>в одном приложении</li>
+                        <li class="list">отображение <br class="mobile">статусов выполнения заявок</li>
+
+                    </ul>
+                </div>
+                <div class="eco__container">
+                    <h3 class="subtitle">Вы и ваши<br>специалисты</h3>
+                    <ul class="eco__list">
+                        <li class="list">прозрачный учет <br class="mobile">заявок </li>
+                        <li class="list">контроль <br class="mobile">исполнения <br class="pc pc-1200 pt">заявок</li>
+                        <li class="list">статистика, отчеты</li>
+                    </ul>
+                </div>
+                <div class="eco__container">
+                    <h3 class="subtitle">Специалисты Управляющей компании</h3>
+                    <ul class="eco__list">
+                        <li class="list">полная информация о задачах</li>
+                        <li class="list">фото- и видеофиксация результатов</li>
+                        <li class="list">общение с резидентами<br>и диспечтерами УК через чат</li>
+                    </ul>
+                </div>
+                <img class="eco__img" src="./img/eco-1.png" alt="Иконка" />
+                <img class="eco__img" src="./img/eco-2.png" alt="Иконка" />
+                <img class="eco__img" src="./img/eco-3.png" alt="Иконка" />
+            </div>
+        </section>
+        <section class="accordion">
+            <div id="accordion" class="container">
+                <div class="accordion__card accordion_active">
+                    <div class="accordion__top">
+                        <img class="accordion__arrow" src="./img/accordion-arrow.png" alt="Стрелочка" />
+                        <h3 class="undertitle"><span class="accordion__undertitle_active">Преимущества<br></span>Для руководителей</h3>
+                    </div>
+                    <div class="accordion__bottom">
+                        <ul class="accordion__list">
+                            <li class="list">контроль качества всех работ</li>
+                            <li class="list">экономия на ФОТ</li>
+                            <li class="list">упрощение процессов <br class="pt">коммуникации</li>
+                            <li class="list">планирование работ <br class="mobile">по ТОиР</li>
+                            <li class="list">повышение лояльности резидентов</li>
+                        </ul>
+                        <img class="accordion__img-1 pc pc-1200" src="./img/accordion-1.png" alt="Интерфейс руководителей"/>
+                        <img class="accordion__img-1 pt" src="./img/accordion-1-pt.png" alt="Интерфейс руководителей"/>
+                        <img class="accordion__img-1 mobile" src="./img/accordion-1-mobile.png" alt="Интерфейс руководителей"/>
+                    </div>
+                </div>
+                <div class="accordion__card">
+                    <div class="accordion__top">
+                        <img class="accordion__arrow" src="./img/accordion-arrow.png" alt="Стрелочка" />
+                        <h3 class="undertitle"><span class="accordion__undertitle_active">Преимущества<br></span>Для администраторов</h3>
+                    </div>
+                    <div class="accordion__bottom">
+                        <ul class="accordion__list">
+                            <li class="list">единое окно для всех заявок</li>
+                            <li class="list">контроль исполнения заявок</li>
+                            <li class="list">быстрый поиск по конкретному<br>запросу</li>
+                            <li class="list">групповые и индивидуальные<br>уведомления</li>
+                            <li class="list">чат с резидентами и исполнителями</li>
+                        </ul>
+                        <img class="accordion__img-2 pc pc-1200 pt" src="./img/accordion-2.png" alt="Интерфейс руководителей"/>
+                        <img class="accordion__img-2 mobile" src="./img/accordion-2-mobile.png" alt="Интерфейс руководителей"/>
+                    </div>
+                </div>
+                <div class="accordion__card">
+                    <div class="accordion__top">
+                        <img class="accordion__arrow" src="./img/accordion-arrow.png" alt="Стрелочка" />
+                        <h3 class="undertitle"><span class="accordion__undertitle_active">Преимущества<br></span>Для службы эксплуатации</h3>
+                    </div>
+                    <div class="accordion__bottom">
+                        <ul class="accordion__list">
+                            <li class="list">мгновенные уведомления о новых заявках</li>
+                            <li class="list">полная информация о задачах и настройка фильтров</li>
+                            <li class="list">фото- и видеофиксация результатов</li>
+                            <li class="list">чат с резидентами и администраторами<br class="pc-1200">через чат</li>
+                            <li class="list">настройка графика работы</li>
+                            <li class="list">возможность передачи заявки другому исполнителю</li>
+                            <li class="list">получение обратной связи от резидента</li>
+                        </ul>
+                        <img class="accordion__img-3 pc pc-1200 pt" src="./img/accordion-3.png" alt="Интерфейс руководителей"/>
+                        <img class="accordion__img-3 mobile" src="./img/accordion-3-mobile.png" alt="Интерфейс руководителей"/>
+                    </div>
+                </div>
+                <div class="accordion__card">
+                    <div class="accordion__top">
+                        <img class="accordion__arrow" src="./img/accordion-arrow.png" alt="Стрелочка" />
+                        <h3 class="undertitle"><span class="accordion__undertitle_active">Преимущества<br></span>Для резидентов</h3>
+                    </div>
+                    <div class="accordion__bottom">
+                        <ul class="accordion__list">
+                            <li class="list">все сервисы УК в одном приложении</li>
+                            <li class="list">отображение статусов выполнения <br class="pc pc-1200 pt">заявок</li>
+                            <li class="list">чат с исполнителями и службой <br class="pc pc-1200 pt">эксплуатации</li>
+                            <li class="list">возможность добавлять заявки в <br class="pc pt">избранное</li>
+                            <li class="list">оценка качества выполненных работ</li>
+                            <li class="list">возможность дать обратную связь <br class="pc pc-1200 pt">исполнителю</li>
+                        </ul>
+                        <img class="accordion__img-4 pc pc-1200 pt" src="./img/accordion-4.png" alt="Интерфейс руководителей"/>
+                        <img class="accordion__img-4 mobile" src="./img/accordion-4-mobile.png" alt="Интерфейс руководителей"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="for-who">
+            <div class="container">
+                <h2 class="title">Кому подойдет Simple Service</h2>
+                <div class="for-who__container">
+                    <div class="for-who__box">
+                        <h3 class="hero-subtitle">Офисная<br>сфера</h3>
+                        <ul class="for-who__list">
+                            <li class="list">Бизнес-центры, <br class="pc-1200">офисы</li>
+                            <li class="list">Коворкинги</li>
+                            <li class="list">Производственные пространства</li>
+                        </ul>
+                        <img class="for-who__icon" src="./img/for-1.png" alt="Иконка" />
+                    </div>
+                    <div class="for-who__box">
+                        <h3 class="hero-subtitle">Жилая<br>сфера</h3>
+                        <ul class="for-who__list">
+                            <li class="list">Жилые комплексы</li>
+                            <li class="list">Коттеджные поселки</li>
+                            <li class="list">Загородные клубы</li>
+                        </ul>
+                        <img class="for-who__icon" src="./img/for-2.png" alt="Иконка" />
+                    </div>
+                    <div class="for-who__box">
+                        <h3 class="hero-subtitle">Общественные пространства</h3>
+                        <ul class="for-who__list">
+                            <li class="list">Креативные кластеры</li>
+                            <li class="list">Гос. учреждения: школы, сады, поликлиники</li>
+                            <li class="list">Спортивные комплексы</li>
+                        </ul>
+                        <img class="for-who__icon" src="./img/for-3.png" alt="Иконка" />
+                    </div>
+                    <div class="for-who__box">
+                        <h3 class="hero-subtitle">Коммерческая недвижимость</h3>
+                        <ul class="for-who__list">
+                            <li class="list">Банки</li>
+                            <li class="list">Торговые центры</li>
+                            <li class="list">HoReCa</li>
+                        </ul>
+                        <img class="for-who__icon" src="./img/for-4.png" alt="Иконка" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="test-box">
+            <div class="container">
+                <h2 class="title">Готовы протестировать Simple Service?</h2>
+                <div class="test-box__text">
+                    <h3 class="subtitle">Мы покажем, как система <br class="pc-1200 pt">будет решать ваши задачи</h3>
+                    <button id="adapt-btn" class="btn">УЗНАТЬ КАК</button>
+                </div>
+            </div>
+        </section>
+        <section id="about-us" class="background-wrapper">
+            <section class="projects">
+                <div class="container">
+                    <h2 class="title">Создаем<br>цифровую экосистему</h2>
+                    <div class="projects__container">
+                        <div class="projects__facts">
+                            <div class="projects__fact">
+                                <h3 class="title">с 2006 года</h3>
+                                <p class="subtitle">ЛИИС внедряет умные решения</p>
+                            </div>
+                            <div class="projects__fact">
+                                <h3 class="title">500+</h3>
+                                <p class="subtitle">реализованных проектов</p>
+                            </div>
+                        </div>
+                        <div class="projects__text">
+                            <p class="desc">ЛИИС  успешно занимается автоматизацией, диспетчеризацией зданий <br class="mobile">и разработкой ПО.</p>
+                            <p class="desc">Предлагаем комплексные решения <br class="pc pc-1200 pt">для автоматизации бизнес-процессов.</p>
+                            <p class="desc">Компания-резидент Сколково.<br>Разработали доступное <br class="mobile">и надежное <br class="pt">решение «Умный Дом» для застройщиков</p>
+                            <h3 class="subtitle">Продукт компании ЛИИС</p>
+                        </div>
+                    </div>
+                    <img class="projects__logo" src="./img/liis-logo.svg" alt="Логотип ЛИИС" />
+                    <img class="skolkovo-logo" src="./img/skolkovo-logo.svg" alt="Логотип Сколково" />
+                </div>
+            </section>
+            <section class="clients">
+                <div class="container">
+                    <h2 class="title">Наши клиенты</h2>
+                    <div class="clients__container">
+                        <div class="clients__img">
+                            <img src="./img/partners/1.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/2.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/3.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/4.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/5.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/6.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/7.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/8.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/9.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/10.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/11.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/12.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/13.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/14.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/15.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img style="mix-blend-mode: difference" src="./img/partners/16.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img src="./img/partners/17.svg" alt="Лого партнера" />
+                        </div>
+                        <div class="clients__img">
+                            <img style="mix-blend-mode: difference" src="./img/partners/18.svg" alt="Лого партнера" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section> 
+        <section class="free-trial">
+            <div class="container free-trial__unfilled">
+                <div class="free-trial__text">
+                    <h2 class="title">Бесплатно протестируйте Simple Service </h2>
+                    <h3 class="subtitle">Тестовый период<br>3 месяца</h3>
+                </div>
+                <div class="free-trial__app">
+                    <form class="free-trial__form">
+                        <input class="free-trial__input" placeholder="Имя" required>
+                        <input class="free-trial__input" placeholder="Телефон" required>
+                        <input class="free-trial__input" placeholder="Email" required>
+                        <input class="free-trial__input" placeholder="Компания" required>
+                        <button id="trial-btn" class="free-trial__btn btn">Оставить заявку</button>
+                    </form>
+                    <div class="checkbox-policy">
+                        <input class="checkbox-input" type="checkbox" name="policy-checkbox" id="1" required="true" checked>
+                        <label class="policy-check" for="1">Я даю согласие на обработку персональных <br class="pc pc-1200">данных и принимаю условия
+                          <a href="./policy/policy.html" class="underline">Политики <br class="pc pc-1200 mobile">конфиденциальности</a></label>
+                    </div>
+                </div>
+            </div>
+            <div class="container free-trial__filled">
+                <h3 class="undertitle">Спасибо!</h3>
+                <p class="subtitle">Уже отправили ваши данные менеджерам.<br>Скоро мы свяжемся с вами.</p>
+                <button class="btn filled__btn">ОК</button>
+                <img src="./img/close-popup.svg" class="free-trial__close-btn" alt="Закрыть" />
+            </div>
+        </section>
+        <section class="slogan">
+            <div class="container">
+                <h2 class="slogan__logo">SR</h2>
+                <h3 class="undertitle">SIMPLE<span>SERVICE</span> — весь сервиc<br>и услуги под вашим контролем</h3>
+            </div>
+        </section>
+    </main>
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <h2 class="footer__logo">Simple<br>service</h2>
+            <div class="footer__text">
+                <div class="footer__column">
+                    <div class="footer__row">
+                        <p class="desc">+7 (906) 269 37 92</p>
+                        <p class="desc">info@simpleservice.tech</p>
+                    </div>
+                    <div class="footer__row">
+                        <p class="desc">Санкт-Петербург,</p>
+                        <p class="desc">ул. Профессора Попова, д.23А</p>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__row">
+                        <p class="desc">ООО «Симпл Чардж»</p>
+                        <p class="desc">ИНН 9731011406</p>
+                    </div>
+                    <div class="footer__row">
+                        <p class="link">Сайт является продуктом компании <br class="pc-1200 pt">ЛИИС <br class="pc"><a href="./policy/policy.html" class="link">Политика конфиденциальности</a></p>
+                        
+                        <p class="link">© 2023 Все права защищены</p>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <a href="#"><img src="./img/footer-appstore.png" class="footer__market" alt="ЭплСтор"></a>
+                    <a href="#"><img src="./img/footer-googleplay.png" class="footer__market" alt="ГуглМаркет"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup popup__fill">
+        <div class="popup__container">
+            <div class="popup__text">
+                <h2 class="undertitle">Заполните форму</h2>
+                <p class="subtitle">Мы свяжемся с вами в ближайшее время</p>
+                <img src="./img/close-popup.svg" class="popup__close-btn close-fill mobile" alt="Закрыть" />
+            </div>
+            <div class="popup__app">
+                <form class="popup__form">
+                    <input placeholder="Имя" class="popup__input" />
+                    <input placeholder="Телефон" class="popup__input" />
+                    <input placeholder="Email" class="popup__input" />
+                    <input placeholder="Компания" class="popup__input" />
+                    <button type="button" class="btn popup__form-btn">Оставить заявку</button>
+                </form>
+                <div class="checkbox-policy">
+                    <input class="checkbox__input" type="checkbox" name="policy-checkbox" id="2" required="true" checked>
+                    <label class="checkbox__label" for="2">Я даю согласие на обработку <br class="pc-1200 pt">персональных <br class="pc">данных и принимаю <br class="pc-1200 pt">условия
+                      <a href="./policy/policy.html" class="underline">Политики <br class="pc">конфиденциальности</a></label>
+                </div>
+                <img src="./img/close-popup.svg" class="popup__close-btn close-fill pc pc-1200 pt" alt="Закрыть" />
+            </div>
+        </div>
+    </div>
+    <div class="popup popup__test">
+        <div class="popup__container">
+            <div class="popup__text">
+                <h2 class="undertitle">Хотите <br class="pc pc-1200 pt">протестировать <br>систему бесплатно?</h2>
+                <p class="subtitle">Заполните форму, <br>и мы свяжемся с вами в ближайшее время</p>
+                <img src="./img/close-popup.svg" class="popup__close-btn close-test mobile" alt="Закрыть" />
+            </div>
+            <div class="popup__app">
+                <form class="popup__form">
+                    <input placeholder="Имя" class="popup__input" />
+                    <input placeholder="Телефон" class="popup__input" />
+                    <input placeholder="Email" class="popup__input" />
+                    <input placeholder="Компания" class="popup__input" />
+                    <button type="button" class="btn popup__form-btn">Оставить заявку</button>
+                </form>
+                <div class="checkbox-policy">
+                    <input class="checkbox__input" type="checkbox" name="policy-checkbox" id="3" required="true" checked>
+                    <label class="checkbox__label" for="3">Я даю согласие на обработку <br class="pc-1200 pt">персональных <br class="pc">данных и принимаю <br class="pc-1200 pt">условия
+                      <a href="./policy/policy.html" class="underline">Политики <br class="pc">конфиденциальности</a></label>
+                </div>
+                <img src="./img/close-popup.svg" class="popup__close-btn close-test pc pc-1200 pt" alt="Закрыть" />
+            </div>
+        </div>
+    </div>
+    <div class="popup popup__adapt">
+        <div class="popup__container">
+            <div class="popup__text">
+                <h2 class="undertitle">Simple Service<br>адаптируется<br>под ваши цели</h2>
+                <p class="subtitle">Заполните форму, <br>и мы свяжемся с вами в ближайшее время</p>
+                <img src="./img/close-popup.svg" class="popup__close-btn close-adapt mobile" alt="Закрыть" />
+            </div>
+            <div class="popup__app">
+                <form class="popup__form">
+                    <input placeholder="Имя" class="popup__input" />
+                    <input placeholder="Телефон" class="popup__input" />
+                    <input placeholder="Email" class="popup__input" />
+                    <input placeholder="Компания" class="popup__input" />
+                    <button type="button" class="btn popup__form-btn">Оставить заявку</button>
+                </form>
+                <div class="checkbox-policy">
+                    <input class="checkbox__input" type="checkbox" name="policy-checkbox" id="4" required="true" checked>
+                    <label class="checkbox__label" for="4">Я даю согласие на обработку <br class="pc-1200 pt">персональных <br class="pc">данных и принимаю <br class="pc-1200 pt">условия
+                      <a href="./policy/policy.html" class="underline">Политики <br class="pc">конфиденциальности</a></label>
+                </div>
+                <img src="./img/close-popup.svg" class="popup__close-btn close-adapt pc pc-1200 pt" alt="Закрыть" />
+            </div>
+        </div>
+    </div>
+    <div class="success">
+        <div class="success__container">
+            <h3 class="undertitle">Спасибо!</h3>
+            <p class="subtitle">Уже отправили ваши данные менеджерам. Скоро мы свяжемся с вами.</p>
+            <button class="btn success__btn">ОК</button>
+            <img src="./img/close-popup.svg" class="success__close-btn" alt="Закрыть" />
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

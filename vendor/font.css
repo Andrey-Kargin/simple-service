@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Aktiv Grotesk Corp light';
+    src:
+      url('./fonts/AktivGroteskCorp-Light.woff') format('woff'),
+      url('./fonts/AktivGroteskCorp-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: wrap;
+  }
+  
+  @font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src:
+      url('./fonts/AktivGroteskCorp-Regular.woff') format('woff'),
+      url('./fonts/aktivgroteskcorp-regular-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: wrap;
+  }
+  
+  @font-face {
+    font-family: 'Aktiv Grotesk Corp Medium';
+    src:
+      url('./fonts/aktivgroteskcorp_medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: wrap;
+  }
